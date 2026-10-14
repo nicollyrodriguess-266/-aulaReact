@@ -75,3 +75,9 @@ app.post("/historico", async(req, res) => {
         mensagem: "consuta salva"
     });
 })
+
+//inicializando o servidor 
+
+app.listen(3000, () => {
+    console.log("servidor rodando na porta 3000");
+});
