@@ -3,7 +3,7 @@
 import{ initializeApp } from "firebase/app";
 
 //importa a função responsável por conectar o realtime database
-import{ getDatabase } from "firebase/app";
+import{ getDatabase } from "firebase/database";
 
 //configuração do projeto Firebase. Essas informações são gerasas automaticamente pelo9 Firebase quando registramos a nossa aplicação. Elas funcionam como um endereço que permite que nossas aplicação encontre e se conecte ao banco de dados na nuvem
 
@@ -25,10 +25,11 @@ const firebaseConfig = {
     appId: "1:889826496457:web:b8d5840a29b7f6894f6218",
     //identificador utilizado pelo google analitics
     measurementId: "G-4N5HH6SC2V"
-};
+}
  
 //inicialização do firebase utilizanfo as configurações acima
 const app = initializeApp(firebaseConfig);
+
 //a partir deste objeto, será possível: ler dados, salvar dados, atualizar dados, excluir dados  
 const db = getDatabase(app);
 
